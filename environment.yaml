@@ -1,0 +1,12 @@
+name: kla_hackathon
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10  # Or your preferred version
+  - pip          # CRITICAL: Forces conda to install its own pip
+  - numpy
+  - scipy
+  - pandas
+  - pip:
+      - -r requirements.txt  # Tells conda to run pip on your file
